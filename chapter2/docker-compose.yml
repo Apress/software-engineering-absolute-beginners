@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  python-dev:
+    container_name: python-dev-container
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./test:/home
+    # tty: true
